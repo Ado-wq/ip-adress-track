@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- LeafLetJS import -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class=" header">
+      <div class="row d-flex justify-content-around align-items-center">
+
+        <h2 class="col-10 justify-self-center text-center p-4"> IP Address Tracker</h2>
+
+        <div class="col-sm-10 col-md-5 col-10">
+          <form class="form my-2 my-lg-2 inputform" id="formID">
+            <div class="input-group mb- ">
+              <input class="form-control" type="search" placeholder="Search for any IP addres" aria-label="Search"
+                id="ip-input">
+
+              <div class="input-group-append">
+                <button class="btn  btnarrow" type="submit"></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="container col-9 custom-container align-content-center">
+          <div class="justify-content-center align-items-end">
+
+            <div class="custom-test row justify-content-around custom-wrapper">
+
+              <div class=" custom-ip-container">
+
+                <p>IP Address
+                <div> <span id="ip-adress"></span></div>
+                </p>
+              </div>
+
+              <div class="small-border-left"></div>
+
+
+              <div class="custom--locations-container">
+
+                <p>Location
+                <div> <span id="country"></span>
+                  <span id="city"></span>
+                  <span id="zipcode"></span>
+                </div>
+                </p>
+              </div>
+              <div class="small-border-left"></div>
+
+              <div class="custom-timezone-control">
+                <p>Timezone </p>
+                <div> <span id="timezone"></span>
+                </div>
+              </div>
+              <div class="small-border-left"></div>
+              <div class="custom-isp-container">
+                <p>ISP
+                <div> <span id="isp"></span></div>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+
+
+  </div>
+  <!-- add offset value dynamically using the API -->
+
+
+  <div id="map">
+
+  </div>
+  </div>
+  <!-- <div class=" attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Adnan Kovacevic</a>.
+  </div>
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
